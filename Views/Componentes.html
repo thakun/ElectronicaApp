@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/Componentes.js"></script>
+    <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
+    <title></title>
+</head>
+<body>
+
+<div data-role="header" data-position="fixed" data-fullscreen="true">
+    <h1>Componentes</h1>
+</div>
+
+
+<div id="background" class="ui-content" role="main" style="margin-top: 10%;">
+
+    <ul data-role="listview" data-divider-theme="a" data-filter="true" data-inset="true" id="list">
+            
+    </ul>
+
+    <div data-role="popup" id="popopResultado" class="ui-content" style="max-width:280px" data-dismissible="false" data-overlay-theme="a">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <img class="popphoto" style="max-height:512px; width: 512px;" alt="Not Found">
+            <p></p>
+    </div>
+
+</div>
+
+
+<div data-role="footer" data-theme="a" data-position="fixed" data-fullscreen="true">
+    <h1>ELM MMR GGI LLT</h1>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/Calculadora.js"></script>
+    <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
+    <title></title>
+    <style>
+        .ui-input-text{
+            width: 150px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+<div data-role="header" data-position="fixed" data-fullscreen="true">
+    <h1>Caculadora</h1>
+</div>
+<div id="background" class="ui-content" role="main" style="margin-top: 10%;">
+
+    <div data-role="collapsibleset" data-theme="a" data-content-theme="a" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
+            <div data-role="collapsible">
+                <h3>Colores - Valor</h3>
+                <form style="width: 363px; margin: 0 auto;">
+                    <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                        <legend>Selecciona los colores de tu resistencia</legend>
+                        <label for="select-native-11">Color 1</label>
+                        <select name="select-native-11" id="select-native-11">
+                            <option value="0">Negro</option>
+                            <option value="1">Cafe</option>
+                            <option value="2">Rojo</option>
+                            <option value="3">Naranja</option>
+                            <option value="4">Amarillo</option>
+                            <option value="5">Verde</option>
+                            <option value="6">Azul</option>
+                            <option value="7">Violeta</option>
+                            <option value="8">Gris</option>
+                            <option value="9">Blanco</option>
+                        </select>
+                        <label for="select-native-12">Color 2</label>
+                        <select name="select-native-12" id="select-native-12">
+                            <option value="0">Negro</option>
+                            <option value="1">Cafe</option>
+                            <option value="2">Rojo</option>
+                            <option value="3">Naranja</option>
+                            <option value="4">Amarillo</option>
+                            <option value="5">Verde</option>
+                            <option value="6">Azul</option>
+                            <option value="7">Violeta</option>
+                            <option value="8">Gris</option>
+                            <option value="9">Blanco</option>
+                        </select>
+                        <label for="select-native-13">Color 3</label>
+                        <select name="select-native-13" id="select-native-13">
+                            <option value="0">Negro</option>
+                            <option value="1">Cafe</option>
+                            <option value="2">Rojo</option>
+                            <option value="3">Naranja</option>
+                            <option value="4">Amarillo</option>
+                            <option value="5">Verde</option>
+                            <option value="6">Azul</option>
+                            <option value="7">Violeta</option>
+                            <option value="8">Gris</option>
+                            <option value="9">Blanco</option>
+                        </select>
+                        <label for="select-native-14">Color 4</label>
+                        <select name="select-native-14" id="select-native-14">
+                            <option value="5%">Dorado</option>
+                            <option value="10%">Plata</option>
+                        </select>
+                    </fieldset>
+
+                    <a href="#popopResultado" id="btnCalc" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-position-to="window">Calcular</a>
+
+                    <div data-role="popup" id="popopResultado" class="ui-content" style="max-width:280px" data-dismissible="false" data-overlay-theme="a">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+                        <p id="resultado"></p>
+                    </div>
+
+                </form>
+            </div>
+            <div data-role="collapsible">
+                <h3>Valor - Colores</h3>
+                <form style="width: 491px; margin: 0 auto;">
+
+                    <label>Ingresa el valor de tu resistencia</label>
+
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+
+                             <input type="text" id="valor" value="" data-wrapper-class="controlgroup-textinput ui-select">
+
+
+                            <label for="select-native-15">Color 1</label>
+                            <select name="select-native-15" id="select-native-15" data-mini="true">
+                                <option value="1">+/- 5%</option>
+                                <option value="2">+/- 10%</option>
+                            </select>
+
+                    </fieldset>
+
+
+                    <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                                <legend></legend>
+                                <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2a" value="ohms" checked="checked">
+                                <label for="radio-choice-h-2a">Ohms</label>
+                                
+                                <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2b" value="kohms">
+                                <label for="radio-choice-h-2b">KOhms</label>
+                                
+                                <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2c" value="mohms">
+                                <label for="radio-choice-h-2c">MOhms</label>
+                                
+                                <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2d" value="gohms">
+                                <label for="radio-choice-h-2d">GOhms</label>
+                            </fieldset>
+
+                    <a href="#popopResultado1" id="btnCalc1" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-position-to="window">Calcular</a>
+
+                    <div data-role="popup" id="popopResultado1" class="ui-content" style="max-width:280px" data-dismissible="false" data-overlay-theme="a">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+                        <p id="resultado1"></p>
+                    </div>
+
+
+
+                </form>
+            </div>
+
+    </div>
+
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed" data-fullscreen="true">
+    <h1>ELM MMR GGI LLT</h1>
+</div>
+
+</body>
+</html>
