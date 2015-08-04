@@ -49,7 +49,7 @@ var crearLi = function (val) {
         lidesc = $('<li class="ui-li-has-thumb ui-first-child"><a class="ui-btn ui-btn-icon-right ui-icon-carat-r" href="#popopResultado" data-rel="popup" data-position-to="window" data-transition="fade" aria-haspopup="true" aria-owns="popopResultado" aria-expanded="false" class="ui-link"><img id="imgP" src="../files/default.png"> <h2>'+ val[1] +'</h2> <p>'+ val[2] +'</p></a> </li>')
 
     lidesc.click(function () {
-        $('.popphoto').attr("src","http://192.168.43.19/Electronica/"+val[4]);
+        $('.popphoto').attr("src","http://192.168.43.19/Electronica/files/"+val[4]);
     })
 
 
